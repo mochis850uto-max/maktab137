@@ -23,7 +23,6 @@ class  NormalUser(User):
         self.comments = comments
 
     def post_comment(self):
-        
         txt = input("please leave a comment: ")
         self.comments.append(txt)
         print(f"{self.user_name} posted a new comment :\n{txt}")
