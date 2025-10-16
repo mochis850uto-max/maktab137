@@ -8,11 +8,11 @@ def restrict_hours(start, end):
                 return func()
             
             else:
-                return print(f"The function is not running at this time.")
+                print(f"The function is not running at this time.")
         return wrapper
     return decorator
 
-@restrict_hours(start=9, end=19)
+@restrict_hours(start=9, end=16)
 def do_work():
     print(f"working!")
 

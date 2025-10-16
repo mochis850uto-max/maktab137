@@ -2,7 +2,7 @@ def cast_to_string(func):
     def wrapper(*args, **kwargs):
         str_args = []
         for i in args:
-            str_args.append(i)
+            str_args.append(str(i))
 
         str_kwargs = {}
         for k, v in kwargs.items():
