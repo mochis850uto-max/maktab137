@@ -30,12 +30,12 @@ class  NormalUser(User):
     def show_comments(self):
         print(self.comments)
 
-user = User("john", "smartjo12@gmail.com") 
-admin_User = AdminUser("noa", "notanother2@gmail.com", [5, 4, 8, 2])  
-normal_user = NormalUser("johanson", "smjijio12@gmail.com", ["very good", "good job", "yes"])  
+user = User("John", "smartjo12@gmail.com") 
+admin_User = AdminUser("Noa", "notanother2@gmail.com", [5, 4, 8, 2])  
+normal_user = NormalUser("Johanson", "smjijio12@gmail.com", ["very good", "good job", "yes"])  
 user.show_info()
 user.login()
-admin_User.ban_user("piter")
+admin_User.ban_user("Peter")
 admin_User.show_privilegs()
 normal_user.post_comment()
 normal_user.show_comments()
